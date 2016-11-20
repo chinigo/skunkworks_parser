@@ -1,0 +1,50 @@
+grammar Benefits
+  rule tier_name
+    ( ('In-Network-Tier-2' | /In-Network/i | 'Out-of-Network') ':'* space* ) {
+      capture(0).value.gsub('-', ' ')
+    }
+  end
+
+  rule specific_treatments
+    'first' space number space ('day' | 'visit' | 'exam' | 'item') ('(s)' | 's')?
+  end
+
+  # Primitives
+  rule not_applicable
+    ('Not Applicable' | 'N/A' | 'NA') {
+      'N/A'
+    }
+  end
+
+  rule dollar
+    ('$' number) {
+      capture(:number).value.to_f
+    }
+  end
+
+  rule percentage
+    (number '%') {
+      capture(:number).value.to_f / 100
+    }
+  end
+
+  rule number
+    float | integer
+  end
+
+  rule float
+    (digits '.' digits) { to_str.to_f }
+  end
+
+  rule integer
+    (digits) { to_str.to_i }
+  end
+
+  rule digits
+    [0-9]+ ('_' [0-9]+)* # Numbers may contain underscores.
+  end
+
+  rule space
+    [ \t]+
+  end
+end

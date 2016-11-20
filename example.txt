@@ -1,0 +1,12 @@
+<cost-share> ::= <tier> <opt-num-prefix> <value> <opt-per-unit> <deductible> <tier-limit> "/" <tier> <opt-num-prefix> <value> <opt-per-unit> <deductible> "|" <benefit-limit>
+<tier> ::= "In-Network:" | "In-Network-Tier-2:" | "Out-of-Network:"   
+<opt-num-prefix> ::= "first" <num> <unit> | ""
+<unit> := "day(s)" | "visit(s)" | "exam(s)" | "item(s)"  
+<value> ::= <copay> | <coinsurance> | <compound> | "unknown" | "Not Applicable"
+<compound> ::= <copay> <deductible> "then" <coinsurance> <deductible> | <copay> <deductible> "then" <copay> <deductible> | <coinsurance> <deductible> "then" <coinsurance> <deductible>
+<copay> ::= "$"<num>
+<coinsurace> ::= <num>"%"
+<opt-per-unit> ::= "per day" | "per visit" | "per stay" | ""
+<deductible> ::= "before deductible" | "after deductible" | ""
+<tier-limit> ::= ", " <limit> | ""
+<benefit-limit> ::= <limit> | ""

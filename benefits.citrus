@@ -1,15 +1,75 @@
 grammar Benefits
-  rule tier_name
-    ( ('In-Network-Tier-2' | /In-Network/i | 'Out-of-Network') ':'* space* ) {
-      capture(0).value.gsub('-', ' ')
-    }
+  rule cost_share
+   tier_name ':' space ( unlimited | included | limited )
   end
 
-  rule specific_treatments
-    'first' space number space ('day' | 'visit' | 'exam' | 'item') ('(s)' | 's')?
+  rule limited
+    coverage (
+        ( before deductible (then coverage (after deductible)?)?)
+      | ( then coverage (after deductible)?)
+      | ( after deductible )
+    )?
+  end
+
+  rule coverage
+    (dollar | percentage | number) per? discrete_treatment_unit? limit?
+  end
+
+  rule limit
+    (per|first)? (dollar | percentage | number)? (coverage_window | discrete_treatment_unit)
+  end
+
+  rule tier_name
+    ( 'In-Network-Tier-2' | 'In-Network' | 'Out-of-Network' )
   end
 
   # Primitives
+  rule coverage_window
+    (/[yY]ear/ | /[bB]enefit [pP]eriod/ | /[dD]ay/)
+  end
+
+  rule included
+    'Included in Medical'
+  end
+
+  rule discrete_treatment_unit
+    space* (/[dD]ay/ | /[vV]isit/ | /[eE]xam/ | /[iI]tem/ | /[tT]reatment/) ('(s)' | 's')?
+  end
+
+  rule then
+      (comma space 'then' space)
+    | (comma space)
+    | (space 'then' space)
+  end
+
+  rule before
+    space 'before' space
+  end
+
+  rule after
+    space 'after' space
+  end
+
+  rule deductible
+    'deductible'
+  end
+
+  rule unlimited
+    'Unlimited'
+  end
+
+  rule per
+    space ( 'per' | 'each' ) space
+  end
+
+  rule first
+    space 'first' space
+  end
+
+  rule comma
+    ','
+  end
+
   rule not_applicable
     ('Not Applicable' | 'N/A' | 'NA') {
       'N/A'

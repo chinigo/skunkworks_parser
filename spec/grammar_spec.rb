@@ -1,36 +1,120 @@
-require 'citrus'
-require_relative 'support/parse_citrus'
-
 Citrus.eval( File.read(File.expand_path('../../benefits.citrus', __FILE__)) )
 
 describe Benefits do
   subject { Benefits }
 
-  describe :tier_name do
-    {
-      'In-Network:'       => 'In Network',
-      'In-Network'        => 'In Network',
-      'In-Network: '      => 'In Network',
-      'In-Network-Tier-2' => 'In Network Tier 2',
-      'Out-of-Network'    => 'Out of Network',
-    }.each do |(str, output)|
-      it { should parse(str, as: :tier_name).into(output) }
+  describe :cost_share do
+    [
+      'In-Network: $0',
+      'In-Network: Unlimited',
+      'In-Network: 90%',
+      'In-Network: Included in Medical',
+      'Out-of-Network: $0',
+      'In-Network: $50 before deductible, $0 after deductible',
+
+      'In-Network: $50 then 50%',
+      'In-Network: $50 then 50% after deductible',
+      'In-Network: $120 first 5 visit(s) then $0',
+    ].each do |str|
+      it { should parse(str, as: :cost_share) }
     end
   end
 
-  describe :specific_treatments do
+  describe :limited do
     [
-      'first 1 day',
-      'first 2 days',
-      'first 48 visits',
-      'first 7 items',
-      'first 4 item(s)',
+      '$500',
+      '25%',
+      '$120 first 5 visit(s)',
+      '$50 before deductible',
+      '$50 after deductible',
+      '$50 before deductible then $0 after deductible',
+      '$50 then $0 after deductible',
+      '$50 then 1 exam per year',
+      '$120 first 5 visit(s) then 10% per visit',
+      '$100 per day first 5 day(s) then $0 per day',
+      '$500 per visit before deductible then $10 per visit',
+      '$500 per visit before deductible then $10 per visit after deductible',
     ].each do |str|
-      it { should parse(str, as: :specific_treatments) }
+      it { should parse(str, as: :limited) }
+    end
+  end
+
+  describe :tier_name do
+    [
+      'In-Network',
+      'In-Network-Tier-2',
+      'Out-of-Network',
+    ].each do |(str, output)|
+      it { should parse(str, as: :tier_name) }
+    end
+  end
+
+  describe :coverage do
+    [
+      '$0',
+      '50%',
+      '$125 first 5 visit(s)',
+      '$500 per exam',
+      '$500 per exam first 5 exam(s)',
+      '1 exam per year',
+      '$500 per exam first 5 exam(s)',
+    ].each do |str|
+      it { should parse(str, as: :coverage) }
+    end
+  end
+
+  describe :included do
+    it { should parse('Included in Medical', as: :included) }
+  end
+
+  describe :discrete_treatment_unit do
+    [
+      'day',
+      'days',
+      'day(s)',
+      'Day(s)',
+      'items',
+      'Items',
+      'visits',
+      'Visits',
+      'exams',
+      'Exams',
+      'treatments',
+      'Treatments',
+    ].each do |str|
+      it { should parse(str, as: :discrete_treatment_unit) }
+    end
+  end
+
+  describe :then do
+    [
+      ', ',
+      ' then ',
+      ', then ',
+    ].each do |str|
+      it { should parse(str, as: :then) }
     end
 
-    it { should_not parse('last 1 day', as: :specific_treatments) }
-    it { should_not parse('last 1 day(s)', as: :specific_treatments) }
+    [
+      ',',
+      'then ',
+      ', then',
+      ' ,',
+      ' , ',
+      ', then'
+    ].each do |str|
+      it { should_not parse(str, as: :then) }
+    end
+  end
+
+  describe :coverage_window do
+    [
+      'Year',
+      'Benefit Period',
+      'Day'
+    ].each do |str|
+      it { should parse(str, as: :coverage_window) }
+    end
   end
 
   describe :dollar do

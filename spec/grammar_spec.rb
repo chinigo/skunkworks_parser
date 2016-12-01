@@ -3,163 +3,79 @@ Citrus.eval( File.read(File.expand_path('../../benefits.citrus', __FILE__)) )
 describe Benefits do
   subject { Benefits }
 
-  describe :cost_share do
+  describe :tier do
     [
       'In-Network: $0',
-      'In-Network: Unlimited',
-      'In-Network: 90%',
-      'In-Network: Included in Medical',
-      'Out-of-Network: $0',
-      'In-Network: $50 before deductible, $0 after deductible',
-
-      'In-Network: $50 then 50%',
-      'In-Network: $50 then 50% after deductible',
-      'In-Network: $120 first 5 visit(s) then $0',
+      'In-Network: unknown',
+      'Out-of-Network: $10000',
+      'Out-of-Network: Unlimited',
+      'Out-of-Network: 30%',
+      'Out-of-Network: NA',
+      'Combined-Networks: $5000',
+      'In-Network: $0 before deductible',
+      'Out-of-Network: 30% after deductible',
+      'Out-of-Network: $15 then 50%',
+      'Out-of-Network: $15 before deductible then 50%',
+      'Out-of-Network: $1500 before deductible then 50% after deductible',
+      'Out-of-Network: $5000 per person',
+      'Out-of-Network: $5000 per person then $10000 per group',
+      'In-Network: $30 per Day',
+      'In-Network: $375 per day after deductible then $0 after deductible',
+      'In-Network: $50 per script',
+      'In-Network: $50 per visit(s) after deductible',
+      'In-Network: 1 exam(s) per year',
+      'Out-of-Network: 100% after $30 reimbursement',
+      'Out-of-Network: $0 after $25 allowance',
+      'Out-of-Network: 100% after $40 rebate',
+      'Out-of-Network: 100% after $30',
+      'In-Network-Tier-2: $0 first 3 visit(s) then 30% after deductible',
+      'Out-of-Network: 50% after deductible up to $300 per day',
+      'Out-of-Network: 50% after deductible up to 1 items per year',
+      'Out-of-Network: 100% first 5 visits',
+      'Out-of-Network: 25% penalty then 20% after deductible',
+      'Out-of-Network: 50% after deductible 1 items per year'
     ].each do |str|
-      it { should parse(str, as: :cost_share) }
+      it { should parse(str, as: :tier) }
     end
   end
 
-  describe :limited do
+  it { should parse('50% after deductible', as: :simple_coverage) }
+  it { should parse('1 items per year', as: :simple_coverage) }
+
+  describe :overall do
     [
-      '$500',
-      '25%',
-      '$120 first 5 visit(s)',
-      '$50 before deductible',
-      '$50 after deductible',
-      '$50 before deductible then $0 after deductible',
-      '$50 then $0 after deductible',
-      '$50 then 1 exam per year',
-      '$120 first 5 visit(s) then 10% per visit',
-      '$100 per day first 5 day(s) then $0 per day',
-      '$500 per visit before deductible then $10 per visit',
-      '$500 per visit before deductible then $10 per visit after deductible',
+      'In-Network-Tier-2: $75 / Out-of-Network: 50% after deductible',
+      'In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 100% | limit: 120 day(s) per Benefit Period',
+      'In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 60% after deductible | limit: 3 Item(s) per Year',
+      'In-Network: $0 / In-Network-Tier-2: $40 after deductible / Out-of-Network: 100%',
+      'In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per 12 month(s)',
+      'In-Network: $0 / Out-of-Network: $5000 / Combined-Networks: $5000'
     ].each do |str|
-      it { should parse(str, as: :limited) }
+      it { should parse(str, as: :overall) }
     end
   end
 
-  describe :tier_name do
+  describe :limitation do
     [
-      'In-Network',
-      'In-Network-Tier-2',
-      'Out-of-Network',
-    ].each do |(str, output)|
-      it { should parse(str, as: :tier_name) }
-    end
-  end
-
-  describe :coverage do
-    [
-      '$0',
-      '50%',
-      '$125 first 5 visit(s)',
-      '$500 per exam',
-      '$500 per exam first 5 exam(s)',
-      '1 exam per year',
-      '$500 per exam first 5 exam(s)',
+      'limit: 1 exam per Year',
+      'limit: 1 per Year',
+      'limit: 60 visit(s) per 12 month(s)',
+      'limit: 60 day(s) per year',
+      'limit: 60 Days per Benefit Period',
+      'limit: 30 visit(s) per Lifetime',
+      'limit: 1 Item(s) per Year',
+      'limit: 180 day(s) per Period',
+      'limit: 4 Treatment(s) per Year',
+      'limit: $0 first 2 visit(s)',
+      'limit: 1 exam(s) per calendar year(s)',
+      'limit: $750 per child up to 5 years old',
+      'limit: first 4 visit(s) copay applies',
+      'limit: copay waived if admitted',
+      'limit: 1 item(s) per 12 month(s) period',
+      'limit: 6 consecutive month(s)',
+      'limit: $1000 per Trip'
     ].each do |str|
-      it { should parse(str, as: :coverage) }
+      it { should parse(str, as: :limitation) }
     end
-  end
-
-  describe :included do
-    it { should parse('Included in Medical', as: :included) }
-  end
-
-  describe :discrete_treatment_unit do
-    [
-      'day',
-      'days',
-      'day(s)',
-      'Day(s)',
-      'items',
-      'Items',
-      'visits',
-      'Visits',
-      'exams',
-      'Exams',
-      'treatments',
-      'Treatments',
-    ].each do |str|
-      it { should parse(str, as: :discrete_treatment_unit) }
-    end
-  end
-
-  describe :then do
-    [
-      ', ',
-      ' then ',
-      ', then ',
-    ].each do |str|
-      it { should parse(str, as: :then) }
-    end
-
-    [
-      ',',
-      'then ',
-      ', then',
-      ' ,',
-      ' , ',
-      ', then'
-    ].each do |str|
-      it { should_not parse(str, as: :then) }
-    end
-  end
-
-  describe :coverage_window do
-    [
-      'Year',
-      'Benefit Period',
-      'Day'
-    ].each do |str|
-      it { should parse(str, as: :coverage_window) }
-    end
-  end
-
-  describe :dollar do
-    {
-      '$500.00' => 500.0,
-      '$499.00' => 499.00,
-      '$3'      => 3.0,
-      '$0.65'   => 0.65,
-      '$0.003'  => 0.003,
-      '$1.003'  => 1.003,
-    }.each do |(str, output)|
-      it { should parse(str, as: :dollar).into(output) }
-    end
-
-    it { should_not parse('10.00', as: :dollar) }
-    it { should_not parse('1.00', as: :dollar) }
-    it { should_not parse('1', as: :dollar) }
-    it { should_not parse('&5.00', as: :dollar) }
-  end
-
-  describe :percentage do
-    {
-      '50%'    => 0.5,
-      '150%'   => 1.5,
-      '7.5%'   => 0.075,
-      '0.302%' => 0.00302,
-    }.each do |(str, output)|
-      it { should parse(str, as: :percentage).into(output) }
-    end
-
-    it { should_not parse('10', as: :percentage) }
-    it { should_not parse('10.0', as: :percentage) }
-    it { should_not parse('$10', as: :percentage) }
-    it { should_not parse('15%', as: :percentage).into(0.14) }
-  end
-
-  describe :not_applicable do
-    [
-      'N/A',
-      'Not Applicable',
-      'NA'
-    ].each do |str|
-      it { should parse(str, as: :not_applicable).into('N/A') }
-    end
-
-    it { should_not parse('Applicable') }
   end
 end

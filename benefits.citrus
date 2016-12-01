@@ -1,73 +1,146 @@
 grammar Benefits
-  rule cost_share
-   tier_name ':' space ( unlimited | included | limited )
+  rule overall
+    ( simple_coverage | tiered_coverage ) (space pipe space limitation)?
   end
 
-  rule limited
-    coverage (
-        ( before deductible (then coverage (after deductible)?)?)
-      | ( then coverage (after deductible)?)
-      | ( after deductible )
-    )?
+  rule tiered_coverage
+    tier (space slash space tier)*
   end
 
-  rule coverage
-    (dollar | percentage | number) per? discrete_treatment_unit? limit?
+  rule tier
+    tier_name colon space simple_coverage (space then? simple_coverage)*
   end
 
-  rule limit
-    (per|first)? (dollar | percentage | number)? (coverage_window | discrete_treatment_unit)
+  rule limitation
+    'limit' colon space simple_coverage
   end
 
-  rule tier_name
-    ( 'In-Network-Tier-2' | 'In-Network' | 'Out-of-Network' )
+  rule simple_coverage
+    ( flat_coverage | coverage_condition ) (space coverage_condition)*
   end
 
-  # Primitives
-  rule coverage_window
-    (/[yY]ear/ | /[bB]enefit [pP]eriod/ | /[dD]ay/)
+  rule flat_coverage
+    ('unknown' | included | penalty | coverage_amount | not_applicable)
   end
 
+  rule coverage_amount
+    currency | unlimited | percentage | enumerated_treatments | digits
+  end
+
+  rule coverage_condition
+    (per_clause | before_after_clause | first_clause | copay_clause)
+  end
+
+  rule per_clause
+    'per' space enumerated_treatments
+  end
+
+  rule before_after_clause
+     ('before' | 'after') space ((currency space payment_category) | payment_category | currency)
+  end
+
+  rule enumerated_treatments
+    (digits space)? treatment_unit
+  end
+
+  rule first_clause
+    ('first' | 'up to') space coverage_amount
+  end
+
+  rule copay_clause
+    'copay' space ('applies' | 'waived') (space 'if admitted')?
+  end
+
+  rule penalty
+    percentage space 'penalty'
+  end
+
+
+  # Terminals
   rule included
     'Included in Medical'
   end
 
-  rule discrete_treatment_unit
-    space* (/[dD]ay/ | /[vV]isit/ | /[eE]xam/ | /[iI]tem/ | /[tT]reatment/) ('(s)' | 's')?
+  rule tier_name
+    ( 'In-Network-Tier-2' | 'Out-of-Network' | 'In-Network' | 'Combined-Networks' )
   end
 
-  rule then
-      (comma space 'then' space)
-    | (comma space)
-    | (space 'then' space)
+  rule payment_category
+    ( 'deductible' | 'reimbursement' | 'allowance'  | 'rebate')
   end
 
-  rule before
-    space 'before' space
+  rule time_unit
+    ('consecutive' space)?
+    atomic_time_unit
+    (space period)?
   end
 
-  rule after
-    space 'after' space
+  rule atomic_time_unit
+    (
+      /[hH]our/
+      | ((/[cC]alendar/ | /[cC]ontract/) space)? year
+      | /[mM]onth/
+      | /[dD]ay/
+      | /[wW]eek/
+      | ((/[bB]enefit/ plural? | /[eE]ligibility/) space)? period
+    ) plural?
   end
 
-  rule deductible
-    'deductible'
+  rule treatment_unit
+    ( time_unit | (
+      /[pP]erson/
+      | (/[cC]hild/ (space 'up to' space digits space year space 'old')?)
+      | /[gG]roup/
+      | /[cC]ondition/
+      | /[sS]cript/
+      | /[vV]isit/
+      | /[eE]xam/
+      | /[iI]tem/
+      | /[sS]tay/
+      | /[lL]ifetime/
+      | /[aA]dmission/
+      | /[eE]pisode/
+      | /[tT]reatment/
+      | /[tT]rip/
+    ) plural?)
+  end
+
+
+  # Primitives
+  rule period
+    /[pP]eriod/
   end
 
   rule unlimited
-    'Unlimited'
+    /[uU]nlimited/
   end
 
-  rule per
-    space ( 'per' | 'each' ) space
-  end
-
-  rule first
-    space 'first' space
+  rule year
+    /[yY]ear/ plural?
   end
 
   rule comma
     ','
+  end
+
+  rule colon
+    ':'
+  end
+
+  rule pipe
+    '|'
+  end
+
+  rule slash
+    '/'
+  end
+
+  rule plural
+    '(s)' | 's'
+  end
+
+  rule then
+    ('then' space | ',' space)
   end
 
   rule not_applicable
@@ -76,7 +149,7 @@ grammar Benefits
     }
   end
 
-  rule dollar
+  rule currency
     ('$' number) {
       capture(:number).value.to_f
     }

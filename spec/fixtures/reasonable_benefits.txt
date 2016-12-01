@@ -164,7 +164,6 @@ In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 80% after deductible
 In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 80% after deductible | limit: 1 Item(s) per Year
 In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 80% after deductible | limit: 1 Treatment(s) per Year
 In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 80% after deductible | limit: 1 Visit(s) per Year
-In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 80% after deductible | limit: 150 Dollars per Year
 In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 80% after deductible | limit: 3 Item(s) per Year
 In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: 90% after deductible
 In-Network: $0 / In-Network-Tier-2: $0 / Out-of-Network: Included in Medical
@@ -269,7 +268,6 @@ In-Network: $0 / In-Network-Tier-2: $4500 / Out-of-Network: Unlimited
 In-Network: $0 / In-Network-Tier-2: $5 / Out-of-Network: $5
 In-Network: $0 / In-Network-Tier-2: $5 / Out-of-Network: 100%
 In-Network: $0 / In-Network-Tier-2: $5 / Out-of-Network: 50% after deductible
-In-Network: $0 / In-Network-Tier-2: $5 / Out-of-Network: 50% and $5
 In-Network: $0 / In-Network-Tier-2: $50 / Out-of-Network: 100%
 In-Network: $0 / In-Network-Tier-2: $50 / Out-of-Network: 50% after deductible
 In-Network: $0 / In-Network-Tier-2: $50 after deductible / Out-of-Network: 50% after deductible
@@ -332,7 +330,6 @@ In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 100% 
 In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 100% | limit: 60 day(s) per Year
 In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 20% after deductible
 In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 20% after deductible | limit: 1 Item(s) per Year
-In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 20% after deductible | limit: first 2 visit(s) $0 then
 In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 30% after deductible
 In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 40% after deductible
 In-Network: $0 / In-Network-Tier-2: 20% after deductible / Out-of-Network: 40% after deductible | limit: 1 Exam(s) per Year
@@ -368,7 +365,6 @@ In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 100% 
 In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 100% | limit: 30 visit(s) per Year
 In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 100% | limit: 60 day(s) per Year
 In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 40% after deductible
-In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 40% after deductible 210 day(s) per year
 In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 40% after deductible | limit: 210 day(s) per Year
 In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 40% after deductible | limit: 210 day(s) per year
 In-Network: $0 / In-Network-Tier-2: 40% after deductible / Out-of-Network: 50% after deductible
@@ -389,7 +385,6 @@ In-Network: $0 / In-Network-Tier-2: 50% after deductible / Out-of-Network: 50% a
 In-Network: $0 / In-Network-Tier-2: 60% / Out-of-Network: 100%
 In-Network: $0 / In-Network-Tier-2: 60% after deductible / Out-of-Network: 70% after deductible
 In-Network: $0 / In-Network-Tier-2: Unlimited / Out-of-Network: Unlimited
-In-Network: $0 / In-Network-Tier-2: first 3 visit(s) $0 then 30% after deductible / Out-of-Network: 100%
 In-Network: $0 / In-Network-Tier-2: unknown / Out-of-Network: 40% after deductible
 In-Network: $0 / In-Network-Tier-2: unknown / Out-of-Network: 40% after deductible | limit: 1 Item(s) per Year
 In-Network: $0 / In-Network-Tier-2: unknown / Out-of-Network: 40% after deductible | limit: 20 visit(s) per Benefit Period
@@ -397,15 +392,6 @@ In-Network: $0 / In-Network-Tier-2: unknown / Out-of-Network: 50% after deductib
 In-Network: $0 / Out-of-Network: $0
 In-Network: $0 / Out-of-Network: $0 after $25 allowance | limit: 1 item(s) per 2 Years
 In-Network: $0 / Out-of-Network: $0 after deductible
-In-Network: $0 / Out-of-Network: $0 after deductible 30% after deductible
-In-Network: $0 / Out-of-Network: $0 after deductible 30% after deductible | limit: 1 Item(s) per Year
-In-Network: $0 / Out-of-Network: $0 after deductible 30% after deductible | limit: 1 Visit(s) per Year
-In-Network: $0 / Out-of-Network: $0 after deductible 40% after deductible
-In-Network: $0 / Out-of-Network: $0 after deductible 40% after deductible | limit: 1 Item(s) per Year
-In-Network: $0 / Out-of-Network: $0 after deductible 40% after deductible | limit: 1 Visit(s) per Year
-In-Network: $0 / Out-of-Network: $0 after deductible 50% after deductible
-In-Network: $0 / Out-of-Network: $0 after deductible 50% after deductible | limit: 1 Item(s) per Year
-In-Network: $0 / Out-of-Network: $0 after deductible 50% after deductible | limit: 1 Visit(s) per Year
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 1 Exam per Year
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 1 Exam(s) per Benefit Period
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 1 Exam(s) per Year
@@ -419,14 +405,9 @@ In-Network: $0 / Out-of-Network: $0 after deductible | limit: 1 exam(s) per 12 m
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 1 exam(s) per year
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 1 visit(s) per Benefit Period
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 1 visit(s) per Year
-In-Network: $0 / Out-of-Network: $0 after deductible | limit: 150 Dollars per Year
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 20 visit(s) per Year
 In-Network: $0 / Out-of-Network: $0 after deductible | limit: 60 visit(s) per Year
-In-Network: $0 / Out-of-Network: $0 copay Out-of-Network: $0 copay waived if admitted
-In-Network: $0 / Out-of-Network: $0 per day up to $500 per person coverage
 In-Network: $0 / Out-of-Network: $0 then 100% after $30 allowance | limit: 1 exam(s) per Year
-In-Network: $0 / Out-of-Network: $0 | limit 1 exam(s) per Year
-In-Network: $0 / Out-of-Network: $0 | limit 130 visit(s) per Year
 In-Network: $0 / Out-of-Network: $0 | limit: 1 Exam per Year
 In-Network: $0 / Out-of-Network: $0 | limit: 1 Exam(s) per Benefit Period
 In-Network: $0 / Out-of-Network: $0 | limit: 1 Exam(s) per Year
@@ -458,9 +439,6 @@ In-Network: $0 / Out-of-Network: $0 | limit: 180 visit(s) per Year
 In-Network: $0 / Out-of-Network: $0 | limit: 30 day(s) per Benefit Period
 In-Network: $0 / Out-of-Network: $0 | limit: 4 Treatment(s) per Year
 In-Network: $0 / Out-of-Network: $0 | limit: 4 visit(s) per Year
-In-Network: $0 / Out-of-Network: $0 | limit: first 3 visit(s) $35 | limit: 1 visit(s) per Benefit Period
-In-Network: $0 / Out-of-Network: $0 | limit: up to $750 per child 1 year of age  | limit: 500 dollars per person
-In-Network: $0 / Out-of-Network: $0 | limit: up to $750 per child up to 1 year of age and $500 max per person
 In-Network: $0 / Out-of-Network: $1 then 100%
 In-Network: $0 / Out-of-Network: $10
 In-Network: $0 / Out-of-Network: $100
@@ -584,7 +562,6 @@ In-Network: $0 / Out-of-Network: 100% after $25 allowance | limit: 1 Item(s) per
 In-Network: $0 / Out-of-Network: 100% after $25 allowance | limit: 1 Item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $25 allowance | limit: 1 item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $25 allowance | limit: 1 item(s) per year
-In-Network: $0 / Out-of-Network: 100% after $25 maximum allowance | limit: 1 item(s) per year
 In-Network: $0 / Out-of-Network: 100% after $25 | limit: 1 Item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $30 allowance
 In-Network: $0 / Out-of-Network: 100% after $30 allowance | limit: 1 Item(s) per Year
@@ -592,7 +569,6 @@ In-Network: $0 / Out-of-Network: 100% after $30 allowance | limit: 1 exam(s) per
 In-Network: $0 / Out-of-Network: 100% after $30 allowance | limit: 1 exam(s) per year
 In-Network: $0 / Out-of-Network: 100% after $30 allowance | limit: 1 item(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 100% after $30 allowance | limit: 1 visit(s) per Year
-In-Network: $0 / Out-of-Network: 100% after $30 maximum allowance | limit: 1 exam(s) per year
 In-Network: $0 / Out-of-Network: 100% after $30 reimbursement
 In-Network: $0 / Out-of-Network: 100% after $30 reimbursement | limit: 1 Item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $30 reimbursement | limit: 1 Visit(s) per Year
@@ -612,20 +588,12 @@ In-Network: $0 / Out-of-Network: 100% after $45 allowance | limit: 1 exam(s) per
 In-Network: $0 / Out-of-Network: 100% after $45 allowance | limit: 1 item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $45 allowance | limit: 1 item(s) per year
 In-Network: $0 / Out-of-Network: 100% after $45 allowance | limit: 1 visit(s) per Year
-In-Network: $0 / Out-of-Network: 100% after $45 maximum allowance | limit: 1 item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $45 reimbursement
 In-Network: $0 / Out-of-Network: 100% after $45 reimbursement | limit: 1 Item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $45 reimbursement | limit: 1 visit(s) per Year
 In-Network: $0 / Out-of-Network: 100% after $45 | limit: 1 Item(s) per Year
-In-Network: $0 / Out-of-Network: 100% after allowance of $45 | limit: 1 item(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 100% after allowance | limit: 1 Item(s) per Year
 In-Network: $0 / Out-of-Network: 100% after deductible
-In-Network: $0 / Out-of-Network: 100% except $30 allowance | limit: 1 Item(s) per Year
-In-Network: $0 / Out-of-Network: 100% except $46 allowance | limit: 1 visit(s) per Year
-In-Network: $0 / Out-of-Network: 100% | limit 1 item(s) per Year
-In-Network: $0 / Out-of-Network: 100% | limit 100 visit(s) per Benefit Period
-In-Network: $0 / Out-of-Network: 100% | limit 60 visit(s) per Benefit Period
-In-Network: $0 / Out-of-Network: 100% | limit: $100 allowance per Year
 In-Network: $0 / Out-of-Network: 100% | limit: 1 Exam per Year
 In-Network: $0 / Out-of-Network: 100% | limit: 1 Exam(s) per 2 Years
 In-Network: $0 / Out-of-Network: 100% | limit: 1 Exam(s) per Benefit Period
@@ -648,7 +616,6 @@ In-Network: $0 / Out-of-Network: 100% | limit: 1 exam(s) per 2 Years
 In-Network: $0 / Out-of-Network: 100% | limit: 1 exam(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 100% | limit: 1 exam(s) per Year
 In-Network: $0 / Out-of-Network: 100% | limit: 1 exam(s) per benefit period
-In-Network: $0 / Out-of-Network: 100% | limit: 1 exam(s) per calender year(s)
 In-Network: $0 / Out-of-Network: 100% | limit: 1 exam(s) per year
 In-Network: $0 / Out-of-Network: 100% | limit: 1 item per year
 In-Network: $0 / Out-of-Network: 100% | limit: 1 item(s) per 12 month(s)
@@ -672,7 +639,6 @@ In-Network: $0 / Out-of-Network: 100% | limit: 100 day(s) per benefit period
 In-Network: $0 / Out-of-Network: 100% | limit: 100 visit(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 100% | limit: 100 visit(s) per Year
 In-Network: $0 / Out-of-Network: 100% | limit: 100 visit(s) per year
-In-Network: $0 / Out-of-Network: 100% | limit: 10000 Dollars per Lifetime
 In-Network: $0 / Out-of-Network: 100% | limit: 116 Visit(s) per Year
 In-Network: $0 / Out-of-Network: 100% | limit: 120 Visit(s) per Year
 In-Network: $0 / Out-of-Network: 100% | limit: 120 day(s) per Admission
@@ -737,11 +703,6 @@ In-Network: $0 / Out-of-Network: 100% | limit: 60 visit(s) per year
 In-Network: $0 / Out-of-Network: 100% | limit: 90 Days per Year
 In-Network: $0 / Out-of-Network: 100% | limit: 90 day(s) per Stay
 In-Network: $0 / Out-of-Network: 100% | limit: 90 visit(s) per Episode
-In-Network: $0 / Out-of-Network: 100% | limit: first 2 visit(s) $0 then
-In-Network: $0 / Out-of-Network: 100% | limit: first 2 visit(s) copay applies
-In-Network: $0 / Out-of-Network: 100% | limit:1 item(s) per Year
-In-Network: $0 / Out-of-Network: 100% | limit:first 2 visit(s) $0 then
-In-Network: $0 / Out-of-Network: 100%after $30 allowance | limit: 1 visit(s) per Year
 In-Network: $0 / Out-of-Network: 15% after deductible
 In-Network: $0 / Out-of-Network: 15% penalty then $0 after deductible
 In-Network: $0 / Out-of-Network: 15% penalty then 30% after deductible
@@ -749,9 +710,6 @@ In-Network: $0 / Out-of-Network: 20%
 In-Network: $0 / Out-of-Network: 20% after $50 deductible | limit: 100 day(s) per Year
 In-Network: $0 / Out-of-Network: 20% after deductible
 In-Network: $0 / Out-of-Network: 20% after deductible 210 day(s) per year
-In-Network: $0 / Out-of-Network: 20% after deductible Out-of-Network: 20% after deductible 1 visit(s) per year
-In-Network: $0 / Out-of-Network: 20% after deductible | condition: for first 3 visits $0
-In-Network: $0 / Out-of-Network: 20% after deductible | limit 1 exam(s) per year
 In-Network: $0 / Out-of-Network: 20% after deductible | limit: 1 Exam(s) per 2 Years
 In-Network: $0 / Out-of-Network: 20% after deductible | limit: 1 Exam(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 20% after deductible | limit: 1 Exam(s) per Year
@@ -788,7 +746,6 @@ In-Network: $0 / Out-of-Network: 20% after deductible | limit: 90 Visit(s) per E
 In-Network: $0 / Out-of-Network: 20% after deductible | limit: 90 day(s) per Stay
 In-Network: $0 / Out-of-Network: 20% after deductible | limit: 90 day(s) per Year
 In-Network: $0 / Out-of-Network: 20% after deductible | limit: 90 visit(s) per Episode
-In-Network: $0 / Out-of-Network: 20% after deductible | limit: first 3 visit(s) $0
 In-Network: $0 / Out-of-Network: 20% penalty before deductible then 30% after deductible
 In-Network: $0 / Out-of-Network: 20% penalty then $0 after deductible
 In-Network: $0 / Out-of-Network: 20% penalty then 20% after deductible
@@ -814,7 +771,6 @@ In-Network: $0 / Out-of-Network: 25% penalty then $0 after deductible
 In-Network: $0 / Out-of-Network: 25% penalty then 10% after deductible
 In-Network: $0 / Out-of-Network: 25% penalty then 20% after deductible
 In-Network: $0 / Out-of-Network: 25% penalty then 30% after deductible
-In-Network: $0 / Out-of-Network: 25% penlalty then $0 after deductible
 In-Network: $0 / Out-of-Network: 25% then 20% after deductible
 In-Network: $0 / Out-of-Network: 25% | limit: 1 Exam(s) per Year
 In-Network: $0 / Out-of-Network: 25% | limit: 1 Item(s) per Benefit Period
@@ -829,7 +785,6 @@ In-Network: $0 / Out-of-Network: 25% | limit: 150 visit(s) per Year
 In-Network: $0 / Out-of-Network: 25% | limit: 48 Hours
 In-Network: $0 / Out-of-Network: 30%
 In-Network: $0 / Out-of-Network: 30% after deductible
-In-Network: $0 / Out-of-Network: 30% after deductible | limit 1 exam(s) per Year
 In-Network: $0 / Out-of-Network: 30% after deductible | limit: 1 Exam(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 30% after deductible | limit: 1 Exam(s) per Year
 In-Network: $0 / Out-of-Network: 30% after deductible | limit: 1 Exam(s) per year
@@ -885,7 +840,6 @@ In-Network: $0 / Out-of-Network: 35% after deductible | limit: 15 Visit(s) per Y
 In-Network: $0 / Out-of-Network: 40%
 In-Network: $0 / Out-of-Network: 40% after deductible
 In-Network: $0 / Out-of-Network: 40% after deductible 1 exam per year
-In-Network: $0 / Out-of-Network: 40% after deductible 210 day(s) per year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 Exam(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 Exam(s) per Year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 Item(s) per Benefit Period
@@ -895,7 +849,6 @@ In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 Visit(s) per Ye
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 Visit(s) per year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 exam(s) per 2 Years
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 exam(s) per Year
-In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 exam(s) per calender year(s)
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 visit(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 visit(s) per Year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 1 visit(s) per year
@@ -911,7 +864,6 @@ In-Network: $0 / Out-of-Network: 40% after deductible | limit: 20 day(s) per Ben
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 20 visit(s) per Benefit Period
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 210 day(s) per Year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 210 day(s) per year
-In-Network: $0 / Out-of-Network: 40% after deductible | limit: 210 day(s) year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 210 visit(s) per Year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 3 Item(s) per Year
 In-Network: $0 / Out-of-Network: 40% after deductible | limit: 30 Treatment(s) per Year
@@ -944,14 +896,11 @@ In-Network: $0 / Out-of-Network: 48% after deductible
 In-Network: $0 / Out-of-Network: 5% penalty then 30% after deductible
 In-Network: $0 / Out-of-Network: 50%
 In-Network: $0 / Out-of-Network: 50% after deductible
-In-Network: $0 / Out-of-Network: 50% after deductible $0 for charges up to $500
 In-Network: $0 / Out-of-Network: 50% after deductible 1 exam per year
 In-Network: $0 / Out-of-Network: 50% after deductible 1 items per year
 In-Network: $0 / Out-of-Network: 50% after deductible after $500 allowance
 In-Network: $0 / Out-of-Network: 50% after deductible up to $2000 per day
 In-Network: $0 / Out-of-Network: 50% after deductible up to $300 per day
-In-Network: $0 / Out-of-Network: 50% after deductible | 1 exam(s) per year
-In-Network: $0 / Out-of-Network: 50% after deductible | condition: cost sharing applies to initial visit
 In-Network: $0 / Out-of-Network: 50% after deductible | limit: 1 Exam per Year
 In-Network: $0 / Out-of-Network: 50% after deductible | limit: 1 Exam(s) per 2 Years
 In-Network: $0 / Out-of-Network: 50% after deductible | limit: 1 Exam(s) per Benefit Period
@@ -1053,7 +1002,6 @@ In-Network: $0 / Out-of-Network: 80% after deductible | limit: 1 Item(s) per Yea
 In-Network: $0 / Out-of-Network: 80% after deductible | limit: 1 Treatment(s) per Year
 In-Network: $0 / Out-of-Network: 80% after deductible | limit: 1 Visit(s) per Year
 In-Network: $0 / Out-of-Network: 80% after deductible | limit: 1 visit(s) per Year
-In-Network: $0 / Out-of-Network: 80% after deductible | limit: 150 Dollars per Year
 In-Network: $0 / Out-of-Network: 80% after deductible | limit: 3 Item(s) per Year
 In-Network: $0 / Out-of-Network: 80% after deductible | limit: 60 visit(s) per Year
 In-Network: $0 / Out-of-Network: 90% after deductible
@@ -1068,8 +1016,6 @@ In-Network: $0 / Out-of-Network: NA | limit: 1 Item(s) per Year
 In-Network: $0 / Out-of-Network: NA | limit: 1 visit(s) per Year
 In-Network: $0 / Out-of-Network: Unlimited
 In-Network: $0 / Out-of-Network: unknown
-In-Network: $0 Out-of-Network: $9000 / Out-of-Network: $9000
-In-Network: $0 after dedctible / Out-of-Network: 100%
 In-Network: $0 after deductible $0 first 2 visit(s) / Out-of-Network: 50% after deductible
 In-Network: $0 after deductible $0 first 3 visit(s) / Out-of-Network: 100%
 In-Network: $0 after deductible $0 first 3 visit(s) / Out-of-Network: 50% after deductible
@@ -1098,7 +1044,6 @@ In-Network: $0 after deductible / In-Network-Tier-2: $0 / Out-of-Network: 100% |
 In-Network: $0 after deductible / In-Network-Tier-2: $0 / Out-of-Network: 100% | limit: 20 Visit(s) per Benefit Period
 In-Network: $0 after deductible / In-Network-Tier-2: $0 / Out-of-Network: 100% | limit: 35 Visit(s) per Benefit Period
 In-Network: $0 after deductible / In-Network-Tier-2: $0 / Out-of-Network: 100% | limit: 60 Days per Benefit Period
-In-Network: $0 after deductible / In-Network-Tier-2: $0 / Out-of-Network: 20% after deductible | condition: for first 4 visits $0
 In-Network: $0 after deductible / In-Network-Tier-2: $0 / Out-of-Network: 30% after deductible
 In-Network: $0 after deductible / In-Network-Tier-2: $0 / Out-of-Network: 50% after deductible | limit: 14 day(s) per Lifetime
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: $0 after deductible
@@ -1153,7 +1098,6 @@ In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-o
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 30 day(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per Benefit Period
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per Year
-In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 300 Dollars per Lifetime
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 35 Visit(s) per Benefit Period
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 35 Visit(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 35 visit(s) per Year
@@ -1169,7 +1113,6 @@ In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-o
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 100% | limit: 90 day(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 20% after deductible
-In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 20% after deductible | condition: for first 4 visits $0
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 20% after deductible | limit: 1 Item(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 20% after deductible | limit: 100 day(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 20% after deductible | limit: 100 visit(s) per Benefit Period
@@ -1225,7 +1168,6 @@ In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-o
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 40% after deductible | limit: 90 day(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 50%
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 50% after deductible
-In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 50% after deductible | condition: for first 3 visits $0
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 50% after deductible | limit: 1 Item(s) per 3 Years
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 50% after deductible | limit: 1 Item(s) per Year
 In-Network: $0 after deductible / In-Network-Tier-2: $0 after deductible / Out-of-Network: 50% after deductible | limit: 1 visit(s) per Year
@@ -1436,18 +1378,8 @@ In-Network: $0 after deductible / Out-of-Network: $0 after deductible 50% after 
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible 50% after deductible | limit: 30 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible 50% | limit: 1 Item(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible 50% | limit: 90 Days per Year
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible I | limit: 1 Exam(s) per year
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible I | limit: 1 Item(s) per Year
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible In-Network deductible applies
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible and 25% penalty
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible in addition to 50% of Average Wholesale Price
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible in-network deductible applies
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | condition: In-Network deductible applies
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | condition: for first 3 visits deductible waived
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | condition: for first 3 visits only copay applies
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | condition: for first 4 visits $20
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | condition: in-network deductible applies
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: $1000 maximum per Trip
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 1 Exam per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 1 Exam(s) per 12 Month Period
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 1 Exam(s) per Benefit Period
@@ -1553,7 +1485,6 @@ In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 3
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 30 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 30 visit(s) per benefit period
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 31 Days per Month
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 34-day(s) supply per prescription
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 35 Visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 35 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 35 visit(s) per Year
@@ -1580,7 +1511,6 @@ In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 4
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 45 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 5 visit(s) per Stay
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 50 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 5000 Dollars per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 52 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 56 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 6 Month(s) per Year
@@ -1599,8 +1529,6 @@ In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 6
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 60 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 60 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 60 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 60 visit(s) per | limit per lifetime
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 60 visit(s) per | limit per lifetime(s)
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 70 Visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 90 Days per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 90 Item(s) per Month
@@ -1608,17 +1536,8 @@ In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 9
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 90 day(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 90 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: 90 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: condition: waived if admitted
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: copay condition: copay waived if admitted
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: copay to hospital condition: copay waived if admitted to hospital
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: first 2 visit(s) $45 then
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: first 2 visit(s) $50 then
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: first 2 visit(s) $60 then
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: first 3 visit(s) $0
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: first 3 visit(s) copay applies
 In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: first 3 visit(s) copay only applies
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: limit: 40 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: $0 after deductible | limit: waived if admitted
 In-Network: $0 after deductible / Out-of-Network: $0 before deductible
 In-Network: $0 after deductible / Out-of-Network: $0 then 30%
 In-Network: $0 after deductible / Out-of-Network: $0 then 30% | limit: 1 Item(s) per Year
@@ -1641,7 +1560,6 @@ In-Network: $0 after deductible / Out-of-Network: $0 | limit: 1 Item(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 | limit: 1 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 | limit: 30 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: $0 | limit: 60 day(s) per Year
-In-Network: $0 after deductible / Out-of-Network: $0after deductible
 In-Network: $0 after deductible / Out-of-Network: $100
 In-Network: $0 after deductible / Out-of-Network: $100 after deductible
 In-Network: $0 after deductible / Out-of-Network: $100 after deductible | limit: 100 visit(s) per Year
@@ -1700,13 +1618,6 @@ In-Network: $0 after deductible / Out-of-Network: 100% after deductible | limit:
 In-Network: $0 after deductible / Out-of-Network: 100% after deductible | limit: 35 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% after deductible | limit: 45 Days per Year
 In-Network: $0 after deductible / Out-of-Network: 100% after deductible | limit: 60 Visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 100% | condition: for first 3 visits $0
-In-Network: $0 after deductible / Out-of-Network: 100% | condition: for first 3 visits $35
-In-Network: $0 after deductible / Out-of-Network: 100% | condition: for first 3 visits $40
-In-Network: $0 after deductible / Out-of-Network: 100% | condition: for first 3 visits $50
-In-Network: $0 after deductible / Out-of-Network: 100% | limit 30 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit 60 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: $50 first 3 Visit(s) then
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: $50 first 3 visits
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 1 Exam per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 1 Exam(s) per 12 Month
@@ -1762,7 +1673,6 @@ In-Network: $0 after deductible / Out-of-Network: 100% | limit: 100 visit(s) per
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 100 visit(s) per Condition
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 100 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 100 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 10000 Dollars per Lifetime
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 116 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 116 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 116 visit(s) per Year
@@ -1813,7 +1723,6 @@ In-Network: $0 after deductible / Out-of-Network: 100% | limit: 200 day(s) per Y
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 200 day(s) per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 200 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 200 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 200 vist(s) per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 21 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 210 Day(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 210 Day(s) per Year
@@ -1864,7 +1773,6 @@ In-Network: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per 
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per Condition
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per Episode
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per Year  | limit: 30 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 30 visit(s) per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 31 Days per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 31 Days per Month
@@ -1893,7 +1801,6 @@ In-Network: $0 after deductible / Out-of-Network: 100% | limit: 40 visit(s) per 
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 40 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 40 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 40 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 40 visit(s) per | limit per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 42 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 42 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 42 visit(s) per year
@@ -1908,7 +1815,6 @@ In-Network: $0 after deductible / Out-of-Network: 100% | limit: 5 Days per Admis
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 5 day(s) per Episode
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 50 day(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 50 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 500 Dollars per Episode
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 54 day(s) per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 54 visit(s) per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 6 Month(s) per Lifetime
@@ -1939,9 +1845,6 @@ In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per 
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per Lifetime
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per | limit per lifetime
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 visit(s) per | limit per year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: 60 vist(s) per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 90 Days per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 90 Days per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 90 Days per year
@@ -1956,25 +1859,11 @@ In-Network: $0 after deductible / Out-of-Network: 100% | limit: 90 visit(s) per 
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 90 visit(s) per year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 96 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: 96 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 10 visit(s) $20 then
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 2 visit(s) $60 then
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 3 visit(s) $0
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 3 visit(s) $0 then
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 3 visit(s) $30
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 3 visit(s) $35
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 3 visit(s) $45
-In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 3 visit(s) $50 then
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 3 visit(s) copay applies
 In-Network: $0 after deductible / Out-of-Network: 100% | limit: first 4 visit(s) copay waived
-In-Network: $0 after deductible / Out-of-Network: 100% | limiti: limiti: 40 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: 100% | limiti: limiti: 60 visit(s) per year
 In-Network: $0 after deductible / Out-of-Network: 15% penalty then $0 after deductible
 In-Network: $0 after deductible / Out-of-Network: 20%
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible
-In-Network: $0 after deductible / Out-of-Network: 20% after deductible Out-of-Network: 20% after deductible 1 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: 20% after deductible Out-of-Network: 20% after deductible waived if admitted
-In-Network: $0 after deductible / Out-of-Network: 20% after deductible | condition: for first 3 visits $0
-In-Network: $0 after deductible / Out-of-Network: 20% after deductible | condition: for first 4 visits $0
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 1 Exam per Year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 1 Exam(s) per 2 Years
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 1 Exam(s) per Year
@@ -2019,7 +1908,6 @@ In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 20 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 20 visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 200 day(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 200 vist(s) per year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 3 Item(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 30 Days per Admission
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 30 Days per Benefit Period
@@ -2060,7 +1948,6 @@ In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 60 day(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 60 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 60 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 60 vist(s) per year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 90 Days per Year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 90 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 90 day(s) per Benefit Period
@@ -2070,19 +1957,14 @@ In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 90 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 90 visit(s) per Episode
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: 90 visit(s) per Year
-In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: condition: waived if admitted
 In-Network: $0 after deductible / Out-of-Network: 20% after deductible | limit: first 4 visit(s) copay applies
 In-Network: $0 after deductible / Out-of-Network: 20% penalty then $0 after deductible
 In-Network: $0 after deductible / Out-of-Network: 20% penalty then $0 after deductible | limit: 3 Item(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 20% | limit: 25 day(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 20% | limit: 35 visit(s) per Benefit Period
 In-Network: $0 after deductible / Out-of-Network: 20% | limit: 60 visit(s) per Benefit Period
-In-Network: $0 after deductible / Out-of-Network: 20%after deductible | limit: 1 Item(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 25%
 In-Network: $0 after deductible / Out-of-Network: 25% after deductible
-In-Network: $0 after deductible / Out-of-Network: 25% after deductible Out-of-Network: 25% after deductible 20 visit(s) per year
-In-Network: $0 after deductible / Out-of-Network: 25% after deductible | condition: for first 3 visits $0
-In-Network: $0 after deductible / Out-of-Network: 25% after deductible | limit 60 Visit(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 25% after deductible | limit: 1 Exam per Year
 In-Network: $0 after deductible / Out-of-Network: 25% after deductible | limit: 1 Exam(s) per Year
 In-Network: $0 after deductible / Out-of-Network: 25% after deductible | limit: 1 Item(s) per Year
@@ -3437,13 +3319,6 @@ In-Network: $10 then 10% / Out-of-Network: 50% after deductible | limit: first 4
 In-Network: $10 then 10% after deductible / In-Network-Tier-2: $20 then 50% after deductible / Out-of-Network: 100%
 In-Network: $10 then 10% after deductible / Out-of-Network: 10% after deductible | limit: 1 visit(s) per Benefit Period
 In-Network: $10 then 10% after deductible / Out-of-Network: 100%
-In-Network: $10 then 10% after deductible / Out-of-Network: 100% | condition: for first 3 visits only copay applies
-In-Network: $10 then 10% after deductible / Out-of-Network: 100% | limit: first 3 visit(s) copay applies
-In-Network: $10 then 10% after deductible / Out-of-Network: 30% after deductible
-In-Network: $10 then 10% after deductible / Out-of-Network: 40% after deductible | condition: for first 3 visits only copay applies
-In-Network: $10 then 10% after deductible / Out-of-Network: 50% after deductible
-In-Network: $10 then 20% after deductible / In-Network-Tier-2: $10 then 20% after deductible / Out-of-Network: 100% | condition: for first 3 visits only copay applies
-In-Network: $10 then 20% after deductible / In-Network-Tier-2: $10 then 20% after deductible / Out-of-Network: 100% | condition: for first 5 visits only copay applies
 In-Network: $10 then 20% after deductible / In-Network-Tier-2: $10 then 20% after deductible / Out-of-Network: 30% after deductible | condition: for first 5 visits only copay applies
 In-Network: $10 then 20% after deductible / In-Network-Tier-2: $10 then 20% after deductible / Out-of-Network: 50% after deductible | condition: for first 3 visits only copay applies
 In-Network: $10 then 20% after deductible / Out-of-Network: 100%

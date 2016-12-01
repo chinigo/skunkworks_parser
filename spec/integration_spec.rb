@@ -7,7 +7,7 @@ describe 'integration' do
     i = 0
     f.each_line do |line|
       it { should parse(line.chomp.strip) }
-      break if (i+=1) == 400
+      # break if (i+=1) == 2000
     end
   end
 end

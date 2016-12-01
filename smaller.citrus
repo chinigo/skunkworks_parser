@@ -1,0 +1,119 @@
+grammar Smaller
+  rule overall
+    ( simple_coverage | tiered_coverage ) (space pipe space limitation)?
+  end
+
+  rule tiered_coverage
+    tier (space slash space tier)*
+  end
+
+  rule tier
+    tier_name colon space simple_coverage (space then space simple_coverage)*
+  end
+
+  rule simple_coverage
+    coverage_amount (space per_clause)? (space coverage_condition)?
+  end
+
+  rule limitation
+    'limit' colon space simple_coverage
+  end
+
+  rule tier_name
+    ( 'In-Network-Tier-2' | 'Out-of-Network' | 'In-Network' )
+  end
+
+  rule coverage_amount
+    currency | 'Unlimited' | percentage | ( digits space treatment_unit plural? )
+  end
+
+  rule coverage_condition
+    'before deductible' | 'after deductible' | 'penalty'
+  end
+
+  rule per_clause
+    'per' space (treatment_unit | (integer space)? time_unit ) plural?
+  end
+
+  rule time_unit
+    (   /[hH]our/
+      | ((/[cC]alendar/ | /[cC]ontract/) space)? /[yY]ear/
+      | /[mM]onth/
+      | /[dD]ay/
+      | /[wW]eek/
+      | /[lL]ifetime/
+      | /[aA]dmission/
+      | /[eE]pisode/
+      | /[tT]reatment/
+      | ((/[bB]enefit/ plural? | /[eE]ligibility/) space)? /[pP]eriod/
+    )
+  end
+
+  rule treatment_unit
+    time_unit | (/[pP]erson/ | /[gG]roup/ | /[cC]ondition/ | /[sS]cript/ | /[vV]isit/ | /[eE]xam/ | /[iI]tem/ | /[sS]tay/)
+  end
+
+
+  # Primitives
+  rule comma
+    ','
+  end
+
+  rule colon
+    ':'
+  end
+
+  rule pipe
+    '|'
+  end
+
+  rule slash
+    '/'
+  end
+
+  rule plural
+    '(s)' | 's'
+  end
+
+  rule then
+    ('then' | ',' space | space)
+  end
+
+  rule not_applicable
+    ('Not Applicable' | 'N/A' | 'NA') {
+      'N/A'
+    }
+  end
+
+  rule currency
+    ('$' number) {
+      capture(:number).value.to_f
+    }
+  end
+
+  rule percentage
+    (number '%') {
+      capture(:number).value.to_f / 100
+    }
+  end
+
+  rule number
+    float | integer
+  end
+
+  rule float
+    (digits '.' digits) { to_str.to_f }
+  end
+
+  rule integer
+    (digits) { to_str.to_i }
+  end
+
+  rule digits
+    [0-9]+ ('_' [0-9]+)* # Numbers may contain underscores.
+  end
+
+  rule space
+    [ \t]+
+  end
+end
